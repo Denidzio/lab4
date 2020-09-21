@@ -101,9 +101,13 @@ public class Main {
                 if(count_repeat_potter_words[j] > count_repeat_potter_words[max])
                     max = j;
 
-            String tmp = uniq_potter_words[i];
+            String tmp_word = uniq_potter_words[i];
             uniq_potter_words[i] = uniq_potter_words[max];
-            uniq_potter_words[max] = tmp;
+            uniq_potter_words[max] = tmp_word;
+
+            int tmp_index_item = count_repeat_potter_words[i];
+            count_repeat_potter_words[i] = count_repeat_potter_words[max];
+            count_repeat_potter_words[max] = tmp_index_item;
 
         }
 
