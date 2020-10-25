@@ -71,10 +71,13 @@ public class CustomArray {
         int position = this.getElementIndex(key);
 
         switch(position){
+
             case -1:
                 throw new IllegalArgumentException("The key " + key + " doesn't exist!");
+
             default:
                 this.values[position] = value;
+
         }
 
     }
@@ -84,10 +87,13 @@ public class CustomArray {
         int position = this.getElementIndex(key);
 
         switch(position){
+
             case -1:
                 throw new IllegalArgumentException("The key " + key + " doesn't exist!");
+
             default:
                 return this.values[position];
+
         }
 
     }
@@ -178,7 +184,6 @@ public class CustomArray {
             }
 
         }
-
 
         return new CustomArray(sortKeys, sortValues);
 
